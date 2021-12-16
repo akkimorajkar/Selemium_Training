@@ -61,6 +61,12 @@ public class CustomXpath {
 
         //input[@class='first-name-form']//following::div    (This will give all the following divs to the input tag)
 
+        // -- X-path Axis ---
+
+        //a[text()='Akshay Morajkar']//parent::td//preceding-sibling::td/input[@type=''checkbox'] (Here we are transversing a tag to its parent tag 'td' and from there we are transverisng to its preceding sibling )
+
+
+
 
 
 
