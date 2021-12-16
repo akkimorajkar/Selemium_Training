@@ -31,6 +31,38 @@ public class CustomXpath {
 
         //div[@class='lazy-image-wrapper loaded']   (with xpath u can use the class attribute with all the classes where as with By.class u can only use one class)
 
+        // --- XPath indexing --//
+
+        //  (//div[contains(@class,'form-field')])[3]    (3rd in the Index out of 6 Elements with same Class)
+
+        //input[starts-with(@name,'ph')]    (Starts with function, here name is starting name attribute is phone and hence ph is the starting two letters
+
+        //select[@name='query-contact']/option  (Single Slash gives direct child (/option) & double slash gives all the childs direct + indirect )
+
+
+        // Backward Traversing
+
+        //a[@class='nav-label' and @href='/customers/']/..    (for going from Child to parent)
+
+        //a[@class='nav-label' and @href='/customers/']/parent::li  (this way as well u can transverse from child to parent)
+
+        //strong[text()='Email:']/ancestor::div   (this way as well u can transverse from child to ancestor)
+
+        // Parent to Child transversing
+
+        //select[@name='query-contact']//child::option[@value='Sales']   (This way as well u can transverse from parent to child)
+
+        //select[@name='query-contact']/child::option[@value='Sales']  (This as well u will get above selection using sigle slash as option is direct Child of select )
+
+
+        // Preceding & Following
+
+        //textarea[@class='message-form']//preceding::div   (This will give all the preceeding divs to the textarea tag)
+
+        //input[@class='first-name-form']//following::div    (This will give all the following divs to the input tag)
+
+
+
 
 
 
